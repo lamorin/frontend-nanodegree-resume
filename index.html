@@ -22,21 +22,15 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   <!-- Tells the browser what the title of this page should be. -->
   <title>Resume</title>
 
+  <!-- <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> -->
+<script src="http://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCh9bQ1cCUwSlXRK3NqRwDhTSiN2FyvXUQ"></script>
+
   <!-- Load the page styles. -->
   <link href="css/style.css" rel="stylesheet">
-
-
-
-  <!--
-  Uncomment the <script> tag below when you're ready to add an interactive Google Map to your resume!
-  -->
-<!-- <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> -->
-
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
   <div id="main">
-    Hello world!   <!-- You'll be deleting this line in the course -->
 
     <!--
     Everything from here to the <script> tag below is the skeleton of your
@@ -91,6 +85,9 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   <!-- More on helper.js in the class -->
   <script src="js/helper.js"></script>
 
+
+
+
   <!--
   The next line tells the browser where to download the JavaScript file you'll be
   writing. In resumeBuilder.js, you'll be writing code that builds the resume
@@ -129,20 +126,24 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
       document.getElementById('header').style.display = 'none';
     }
     if(document.getElementsByClassName('work-entry').length === 0) {
-      document.getElementById('workExperience').style.display = 'none';
+      document.getElementById('workExperience').style.backgroundColor = 'none';
     }
     if(document.getElementsByClassName('project-entry').length === 0) {
-      document.getElementById('projects').style.display = 'none';
+      document.getElementById('projects').style.backgroundColor = 'none';
     }
     if(document.getElementsByClassName('education-entry').length === 0) {
-      document.getElementById('education').style.display = 'none';
+      document.getElementById('education').style.backgroundColor = 'none';
     }
     if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('lets-connect').style.display = 'none';
+      document.getElementById('lets-connect').style.backgroundColor = 'none';
     }
     if(document.getElementById('map') === null) {
-      document.getElementById('mapDiv').style.display = 'none';
+      document.getElementById('mapDiv').style.backgroundColor = 'none';
     }
   </script>
+
+  <!--
+  Uncomment the <script> tag below when you're ready to add an interactive Google Map to your resume!
+  -->
 </body>
 </html>
