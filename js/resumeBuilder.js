@@ -13,7 +13,7 @@ var bio = {
                         "location" : "Montreal"
                         },
             "bio-pic" : "images/me.jpg",
-            "skills" : ["Java", "JavaScript", "CSS3", "HTML5", "SQL","Spring Framework"],
+            "skills" : ["Java", "JavaScript", "CSS3", "HTML5", "SQL","Spring Framework","Git"],
             "display" : function() {
                             var formattedName = HTMLheaderName.replace("%data%", inName());
                             var formattedRole = HTMLheaderRole.replace("%data%", this.role);
